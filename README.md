@@ -35,6 +35,29 @@ python image_coordinates.py
 3. Move your cursor over the image to see the coordinates
 4. The coordinates are displayed at the top of the window
 
+## Command-line Setup (Optional)
+To make the script executable from anywhere in your terminal:
+
+1. Make the script executable:
+```bash
+chmod +x image_coordinates.py
+```
+
+2. Create a symbolic link (requires sudo):
+```bash
+sudo ln -s "/path/to/your/image_coordinates.py" /usr/local/bin/image-coords
+```
+
+After setup, you can run the application from anywhere by typing:
+```bash
+image-coords
+```
+
+To remove the command-line shortcut:
+```bash
+sudo rm /usr/local/bin/image-coords
+```
+
 ## Supported Image Formats
 - PNG
 - JPG/JPEG
